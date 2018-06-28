@@ -4,7 +4,7 @@ const moment = require('moment');
 
 module.exports = async (client) => {
     try {
-        const response = await fetch('http://pso2.rodrigo.li/eq/');
+        const response = await fetch('http://198.13.40.78:5000/eq/'); //This address is temporary, will update soon
         if (response.status !== 200) return;
 
         const data = await response.json();
